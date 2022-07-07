@@ -44,7 +44,7 @@ function getResult(unitarray) {
     document.getElementById('num').value = num;
   }
   
-  //条件に該当あればメッセ（なければメッセ初期値空）に続けて計算してメッセ。
+  //条件に該当あればメッセ（なければメッセ初期値空）に続けて計算して単位を書く
   message += "<table border=1>";
   for (let unit of unitarray) {
     let x = Math.floor((amount / num) / unit) * unit;
