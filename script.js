@@ -5,12 +5,12 @@ function getResult(unitarray) {
   let amount = document.getElementById('amount').value;
   let num = document.getElementById('num').value;
   //金額ブランクのとき
-  if (amount == "") {
+  if (amount === "") {
     document.getElementById('result').innerHTML = "金額を入れてください"
     return;
   }
   //人数ブランクのとき
-  if (num == "") {
+  if (num === "") {
     document.getElementById('result').innerHTML = "人数を入れてください"
     return;
   }
@@ -33,7 +33,7 @@ function getResult(unitarray) {
   if (num <= 0) {
     message += '<font color="red">人数を修正します(' + num + '人→';
     num *= (-1);
-    if (num == 0) num = 1;
+    if (num === 0) num = 1;
     document.getElementById('num').value = num;
     message += num + "人）</font><P>"
   }
